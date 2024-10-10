@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: cdevopstechpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cdevopstechpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: cdevopstechpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: cdevopstechpipelinesjavascriptdocker 
+          image: testacrrepo.azurecr.io/cdevopstechpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
