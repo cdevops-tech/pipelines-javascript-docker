@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cdevopstechpipelinesjavascriptdocker 
-          image: testrepo01.azurecr.io/cdevopstechpipelinesjavascriptdocker
+          image: testrepo001.azurecr.io/cdevopstechpipelinesjavascriptdocker
           ports:
           - containerPort: 8080
